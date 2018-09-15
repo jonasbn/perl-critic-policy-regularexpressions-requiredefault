@@ -19,6 +19,7 @@ my $critic = Perl::Critic->new(
 foreach my $data (
     [ 1, q{/\d/}, q{Regular expression without "/a" flag} ],
     [ 0, q{/\d/a}, q{''} ],
+    [ 0, q{/\d/aa}, q{''} ],
     )
 {
     my ( $want_count, $str, $assertion ) = @{$data};

@@ -38,7 +38,7 @@ sub violates {
 
     my $re = $doc->ppix_regexp_from_element( $elem )
         or return;
-    $re->modifier_asserted( 'a' )
+    $re->modifier_asserted( 'a' ) or $re->modifier_asserted( 'aa' )
         or return $self->violation( $DESC, $EXPL, $elem );
 
     return; # ok!;
