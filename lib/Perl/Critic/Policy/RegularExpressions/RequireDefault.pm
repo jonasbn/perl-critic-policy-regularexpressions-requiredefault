@@ -14,7 +14,7 @@ our $VERSION = '0.01';
 #-----------------------------------------------------------------------------
 
 Readonly::Scalar my $DESC => q{Regular expression without "/a" or "/aa" flag};
-Readonly::Scalar my $EXPL => [ 236 ];
+Readonly::Scalar my $EXPL => q{Use regular expression "/a" or "/aa" flag};
 
 #-----------------------------------------------------------------------------
 
