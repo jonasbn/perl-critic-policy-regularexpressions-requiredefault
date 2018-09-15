@@ -33,6 +33,8 @@ sub applies_to           {
 sub violates {
     my ( $self, $elem, $doc ) = @_;
 
+    #REVIEW: Evaluate how we should handle the following two lines.
+    #        Should strict option be for /aa only
     my $match = $elem->get_match_string();
     return if not $self->{_strict} and $match =~ m< \A [\s\w]* \z >xms;
 
