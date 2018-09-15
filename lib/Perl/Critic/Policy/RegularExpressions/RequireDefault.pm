@@ -13,7 +13,7 @@ our $VERSION = '0.01';
 
 #-----------------------------------------------------------------------------
 
-Readonly::Scalar my $DESC => q{Regular expression without "/a" flag};
+Readonly::Scalar my $DESC => q{Regular expression without "/a" or "/aa" flag};
 Readonly::Scalar my $EXPL => [ 236 ];
 
 #-----------------------------------------------------------------------------
@@ -52,7 +52,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> modifier with regular expressions.
+Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> or C</aa> modifier with regular expressions.
 
 =head1 SEE ALSO
 
