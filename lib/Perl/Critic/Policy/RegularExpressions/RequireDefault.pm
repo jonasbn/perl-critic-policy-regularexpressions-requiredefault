@@ -33,11 +33,6 @@ sub applies_to           {
 sub violates {
     my ( $self, $elem, $doc ) = @_;
 
-    #REVIEW: Evaluate how we should handle the following two lines.
-    #        Should strict option be for /aa only
-    my $match = $elem->get_match_string();
-    return if not $self->{_strict} and $match =~ m< \A [\s\w]* \z >xms;
-
     my $re = $doc->ppix_regexp_from_element( $elem )
         or return;
     $re->modifier_asserted( 'a' ) or $re->modifier_asserted( 'aa' )
