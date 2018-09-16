@@ -56,6 +56,8 @@ __END__
 
 Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> or C</aa> modifier with regular expressions.
 
+This policy is inspired by and many implementation details was lifted from L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>
+
 =head1 SEE ALSO
 
 =over
