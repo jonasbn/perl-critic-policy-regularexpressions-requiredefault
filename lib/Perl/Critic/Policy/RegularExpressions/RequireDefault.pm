@@ -53,7 +53,7 @@ Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> 
 
 =head1 AFFILIATION
 
-This policy is affiliated with the Perl::Critic::JONASBN policy bundle.
+This policy has no affiliation
 
 =head1 DESCRIPTION
 
