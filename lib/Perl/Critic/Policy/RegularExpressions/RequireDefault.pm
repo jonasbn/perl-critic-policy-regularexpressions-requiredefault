@@ -63,7 +63,21 @@ This policy has no affiliation
 
 =head1 DESCRIPTION
 
-The C</a> modifier's purpose is to allow code that is to work mostly on ASCII data to not have to concern itself with Unicode.
+The C</a> and C</aa> modifiers provides protection for applications that do not need to be exposed to all of Unicode and possible security issues with Unicode.
+
+This modifier stands for ASCII-restrict or ASCII-safe.
+
+C</a> causes the sequences C<\d>, C<\s>, C<\w>, and the Posix character classes to match only in the ASCII range. Meaning
+
+=over
+
+=item * C<\d> means the digits C<0> to C<9>
+
+=item * C<\s> means the five characters C<[ \f\n\r\t]>, and starting in Perl v5.18, also the vertical tab
+
+=item * C<\w> means the 63 characters C<[A-Za-z0-9_]> and all the Posix classes such as C<[[:print:]]> match only the appropriate ASCII-range characters
+
+=back
 
 This policy is inspired by L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting> and many implementation details was lifted from this particular distribution.
 
@@ -103,16 +117,6 @@ This distribution requires:
 
 Please see the lising in the file: F<cpanfile>, included with the distribution for a complete listing and description for configuration, test and development.
 
-
-    ---------------------------- ------ ------ ------ ------ ------ ------ ------
-    File                           stmt   bran   cond    sub    pod   time  total
-    ---------------------------- ------ ------ ------ ------ ------ ------ ------
-    ...essions/RequireDefault.pm   95.8   75.0  100.0   90.0  100.0  100.0   93.3
-    Total                          95.8   75.0  100.0   90.0  100.0  100.0   93.3
-    ---------------------------- ------ ------ ------ ------ ------ ------ ------
-
-=head1 NOTES
-
 =head1 TODO
 
 =over
@@ -128,6 +132,8 @@ Please see the lising in the file: F<cpanfile>, included with the distribution f
 =item * L<Perl regular expression documentation: perlre|https://perldoc.perl.org/perlre.html>
 
 =item * L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>
+
+=item * L<Unicode Security Guide|http://websec.github.io/unicode-security-guide/>
 
 =back
 
