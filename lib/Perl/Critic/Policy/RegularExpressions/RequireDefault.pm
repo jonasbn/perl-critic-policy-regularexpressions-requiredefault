@@ -18,9 +18,10 @@ Readonly::Scalar my $EXPL => q{Use regular expression "/a" or "/aa" flag};
 
 #-----------------------------------------------------------------------------
 
-sub default_severity     { return $SEVERITY_MEDIUM }
-sub default_themes       { return qw< security > }
-sub applies_to           {
+sub default_severity { return $SEVERITY_MEDIUM }
+sub default_themes   { return qw< security > }
+
+sub applies_to {
     return qw<
         PPI::Token::Regexp::Match
         PPI::Token::Regexp::Substitute
@@ -33,12 +34,13 @@ sub applies_to           {
 sub violates {
     my ( $self, $elem, $doc ) = @_;
 
-    my $re = $doc->ppix_regexp_from_element( $elem )
+    my $re = $doc->ppix_regexp_from_element($elem)
         or return;
-    $re->modifier_asserted( 'a' ) or $re->modifier_asserted( 'aa' )
+    $re->modifier_asserted('a')
+        or $re->modifier_asserted('aa')
         or return $self->violation( $DESC, $EXPL, $elem );
 
-    return; # ok!;
+    return;    # ok!;
 }
 
 1;
