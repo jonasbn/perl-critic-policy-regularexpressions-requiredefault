@@ -51,6 +51,10 @@ __END__
 
 Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> or C</aa> modifier with regular expressions.
 
+=head1 VERSION
+
+This documentation describes version 0.01
+
 =head1 AFFILIATION
 
 This policy has no affiliation
@@ -61,9 +65,49 @@ The C</a> modifier's purpose is to allow code that is to work mostly on ASCII da
 
 This policy is inspired by L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting> and many implementation details was lifted from this particular distribution.
 
-=head1 CONFIGURATION
+=head1 CONFIGURATION AND ENVIRONMENT
 
 This policy is not configurable at this time. Please see the TODO L</section>.
+
+=head1 INCOMPATIBILITIES
+
+This ditribution holds no known incompatibilities at this time, please see L</DEPENDENCIES AND REQUIREMENTS> for details on version requirements.
+
+=head1 BUGS AND LIMITATIONS
+
+This ditribution holds no known incompatibilities at this time, please refer to the L<the issue listing on GitHub|https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues> for more up to date information.
+
+=head1 BUG REPORTING
+
+Please report bugs via L<GitHub|https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues>.
+
+=head1 TEST AND QUALITY
+
+This distribution aims to adhere to the Perl::Critic::Policy standards and Perl best practices and recommendations.
+
+=head1 DEPENDENCIES AND REQUIREMENTS
+
+This distribution requires:
+
+=over
+
+=item * Perl 5.8
+=item * Carp
+=item * Readonly
+=item * Perl::Critic::Policy
+=item * Perl::Critic::Utils
+
+=back
+
+Please see the lising in the file: F<cpanfile>, included with the distribution for a complete listing and description for configuration, test and development.
+
+
+    ---------------------------- ------ ------ ------ ------ ------ ------ ------
+    File                           stmt   bran   cond    sub    pod   time  total
+    ---------------------------- ------ ------ ------ ------ ------ ------ ------
+    ...essions/RequireDefault.pm   95.8   75.0  100.0   90.0  100.0  100.0   93.3
+    Total                          95.8   75.0  100.0   90.0  100.0  100.0   93.3
+    ---------------------------- ------ ------ ------ ------ ------ ------ ------
 
 =head1 NOTES
 
@@ -109,7 +153,7 @@ The motivation for this Perl::Critic policy came from a L<tweet|https://mobile.t
 
 =back
 
-=head1 COPYRIGHT
+=head1 LICENSE AND COPYRIGHT
 
 Perl::Critic::Policy::RegularExpressions::RequireDefault is (C) by jonasbn 2018
 
