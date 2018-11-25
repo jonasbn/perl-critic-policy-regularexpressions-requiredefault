@@ -10,7 +10,7 @@ This policy has no affiliation
 
 The `/a` modifier's purpose is to allow code that is to work mostly on ASCII data to not have to concern itself with Unicode.
 
-This policy is inspired by and many implementation details was lifted from [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting)
+This policy is inspired by [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting) and many implementation details was lifted from this particular distribution.
 
 # CONFIGURATION
 
@@ -20,7 +20,7 @@ This policy is not configurable at this time. Please see the TODO ["section"](#s
 
 # TODO
 
-- Please see [the issue listing on GitHub](https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues|)
+- Please see [the issue listing on GitHub](https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues)
 
 # SEE ALSO
 

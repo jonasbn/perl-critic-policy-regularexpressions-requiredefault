@@ -59,7 +59,7 @@ This policy has no affiliation
 
 The C</a> modifier's purpose is to allow code that is to work mostly on ASCII data to not have to concern itself with Unicode.
 
-This policy is inspired by and many implementation details was lifted from L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>
+This policy is inspired by L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting> and many implementation details was lifted from this particular distribution.
 
 =head1 CONFIGURATION
 
@@ -71,7 +71,7 @@ This policy is not configurable at this time. Please see the TODO L</section>.
 
 =over
 
-=item * Please see L<the issue listing on GitHub|https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues|>
+=item * Please see L<the issue listing on GitHub|https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues>
 
 =back
 
