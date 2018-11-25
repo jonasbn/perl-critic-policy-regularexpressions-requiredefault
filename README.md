@@ -12,7 +12,15 @@ This policy has no affiliation
 
 # DESCRIPTION
 
-The `/a` modifier's purpose is to allow code that is to work mostly on ASCII data to not have to concern itself with Unicode.
+The `/a` and `/aa` modifiers provides protection for applications that do not need to be exposed to all of Unicode and possible security issues with Unicode.
+
+This modifier stands for ASCII-restrict or ASCII-safe.
+
+`/a` causes the sequences `\d`, `\s`, `\w`, and the Posix character classes to match only in the ASCII range. Meaning
+
+- `\d` means the digits `0` to `9`
+- `\s` means the five characters `[ \f\n\r\t]`, and starting in Perl v5.18, also the vertical tab
+- `\w` means the 63 characters `[A-Za-z0-9_]` and all the Posix classes such as `[[:print:]]` match only the appropriate ASCII-range characters
 
 This policy is inspired by [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting) and many implementation details was lifted from this particular distribution.
 
@@ -48,15 +56,6 @@ This distribution requires:
 
 Please see the lising in the file: `cpanfile`, included with the distribution for a complete listing and description for configuration, test and development.
 
-    ---------------------------- ------ ------ ------ ------ ------ ------ ------
-    File                           stmt   bran   cond    sub    pod   time  total
-    ---------------------------- ------ ------ ------ ------ ------ ------ ------
-    ...essions/RequireDefault.pm   95.8   75.0  100.0   90.0  100.0  100.0   93.3
-    Total                          95.8   75.0  100.0   90.0  100.0  100.0   93.3
-    ---------------------------- ------ ------ ------ ------ ------ ------ ------
-
-# NOTES
-
 # TODO
 
 - Please see [the issue listing on GitHub](https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues)
@@ -65,6 +64,7 @@ Please see the lising in the file: `cpanfile`, included with the distribution fo
 
 - [Perl regular expression documentation: perlre](https://perldoc.perl.org/perlre.html)
 - [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting)
+- [Unicode Security Guide](http://websec.github.io/unicode-security-guide/)
 
 # MOTIVATION
 
