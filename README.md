@@ -12,15 +12,15 @@ This policy has no affiliation
 
 # DESCRIPTION
 
-The `/a` and `/aa` modifiers provides protection for applications that do not need to be exposed to all of Unicode and possible security issues with Unicode.
+The `/a` and `/aa` modifiers standing for ASCII-restrict or ASCII-safe, provides protection for applications that do not need to be exposed to all of Unicode and possible security issues with Unicode.
 
-This modifier stands for ASCII-restrict or ASCII-safe.
-
-`/a` causes the sequences `\d`, `\s`, `\w`, and the Posix character classes to match only in the ASCII range. Meaning
+`/a` causes the sequences `\d`, `\s`, `\w`, and the Posix character classes to match only in the ASCII range. Meaning:
 
 - `\d` means the digits `0` to `9`
 - `\s` means the five characters `[ \f\n\r\t]`, and starting in Perl v5.18, also the vertical tab
 - `\w` means the 63 characters `[A-Za-z0-9_]` and all the Posix classes such as `[[:print:]]` match only the appropriate ASCII-range characters
+
+Do note that the `/a` and `/aa` modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduct a requirement for Perl 5.14.
 
 This policy is inspired by [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting) and many implementation details was lifted from this particular distribution.
 
@@ -81,6 +81,7 @@ The motivation for this Perl::Critic policy came from a [tweet](https://mobile.t
 # ACKNOWLEDGEMENTS
 
 - [Joelle Maslak (@joel)](https://twitter.com/jmaslak) / [JMASLAK](https://metacpan.org/author/JMASLAK)
+- [https://github.com/Grinnz|@Grinnz](https://github.com/Grinnz|@Grinnz) for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
 
 # LICENSE AND COPYRIGHT
 
