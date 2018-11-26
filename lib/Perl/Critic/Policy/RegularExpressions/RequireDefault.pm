@@ -119,7 +119,7 @@ This distribution requires:
 
 =back
 
-Please see the lising in the file: F<cpanfile>, included with the distribution for a complete listing and description for configuration, test and development.
+Please see the listing in the file: F<cpanfile>, included with the distribution for a complete listing and description for configuration, test and development.
 
 =head1 TODO
 
