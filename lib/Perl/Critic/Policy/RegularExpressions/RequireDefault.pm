@@ -77,6 +77,8 @@ C</a> causes the sequences C<\d>, C<\s>, C<\w>, and the Posix character classes 
 
 =back
 
+Do note that the C</a> and C</aa> modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduct a requirement for Perl 5.14.
+
 This policy is inspired by L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting> and many implementation details was lifted from this particular distribution.
 
 =head1 CONFIGURATION AND ENVIRONMENT
@@ -156,6 +158,8 @@ The motivation for this Perl::Critic policy came from a L<tweet|https://mobile.t
 =over
 
 =item * L<Joelle Maslak (@joel)|https://twitter.com/jmaslak> / L<JMASLAK|https://metacpan.org/author/JMASLAK>
+
+=item * L<https://github.com/Grinnz|@Grinnz> for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
 
 =back
 
