@@ -4,7 +4,7 @@ Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the `/a` o
 
 # VERSION
 
-This documentation describes version 0.01
+This documentation describes version 0.02
 
 # AFFILIATION
 
@@ -48,7 +48,7 @@ This distribution aims to adhere to the Perl::Critic::Policy standards and Perl 
 
 This distribution requires:
 
-- Perl 5.8
+- Perl 5.14
 - Carp
 - Readonly
 - Perl::Critic::Policy
