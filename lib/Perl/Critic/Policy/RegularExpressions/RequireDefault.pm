@@ -87,11 +87,11 @@ This policy is not configurable at this time. Please see the TODO L</section>.
 
 =head1 INCOMPATIBILITIES
 
-This ditribution holds no known incompatibilities at this time, please see L</DEPENDENCIES AND REQUIREMENTS> for details on version requirements.
+This distribution holds no known incompatibilities at this time, please see L</DEPENDENCIES AND REQUIREMENTS> for details on version requirements.
 
 =head1 BUGS AND LIMITATIONS
 
-This ditribution holds no known incompatibilities at this time, please refer to the L<the issue listing on GitHub|https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues> for more up to date information.
+This distribution holds no known incompatibilities at this time, please refer to the L<the issue listing on GitHub|https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues> for more up to date information.
 
 =head1 BUG REPORTING
 
