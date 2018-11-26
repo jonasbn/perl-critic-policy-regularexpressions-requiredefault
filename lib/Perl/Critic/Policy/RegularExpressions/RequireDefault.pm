@@ -71,9 +71,21 @@ C</a> causes the sequences C<\d>, C<\s>, C<\w>, and the Posix character classes 
 
 =item * C<\d> means the digits C<0> to C<9>
 
+    my $ascii_letters =~ m/[A-Z]*/i;  # not ok
+    my $ascii_letters =~ m/[A-Z]*/a;  # ok
+    my $ascii_letters =~ m/[A-Z]*/aa; # ok
+
 =item * C<\s> means the five characters C<[ \f\n\r\t]>, and starting in Perl v5.18, also the vertical tab
 
+    my $characters =~ m/[ \f\n\r\t]*/;   # not ok
+    my $characters =~ m/[ \f\n\r\t]*/a;  # ok
+    my $characters =~ m/[ \f\n\r\t]*/aa; # ok
+
 =item * C<\w> means the 63 characters C<[A-Za-z0-9_]> and all the Posix classes such as C<[[:print:]]> match only the appropriate ASCII-range characters
+
+    my $letters =~ m/[A-Za-z0-9_]*/;   # not ok
+    my $letters =~ m/[A-Za-z0-9_]*/a;  # ok
+    my $letters =~ m/[A-Za-z0-9_]*/aa; # ok
 
 =back
 
