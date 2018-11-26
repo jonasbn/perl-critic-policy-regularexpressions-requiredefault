@@ -17,8 +17,22 @@ The `/a` and `/aa` modifiers standing for ASCII-restrict or ASCII-safe, provides
 `/a` causes the sequences `\d`, `\s`, `\w`, and the Posix character classes to match only in the ASCII range. Meaning:
 
 - `\d` means the digits `0` to `9`
+
+        my $ascii_letters =~ m/[A-Z]*/i;  # not ok
+        my $ascii_letters =~ m/[A-Z]*/a;  # ok
+        my $ascii_letters =~ m/[A-Z]*/aa; # ok
+
 - `\s` means the five characters `[ \f\n\r\t]`, and starting in Perl v5.18, also the vertical tab
+
+        my $characters =~ m/[ \f\n\r\t]*/;   # not ok
+        my $characters =~ m/[ \f\n\r\t]*/a;  # ok
+        my $characters =~ m/[ \f\n\r\t]*/aa; # ok
+
 - `\w` means the 63 characters `[A-Za-z0-9_]` and all the Posix classes such as `[[:print:]]` match only the appropriate ASCII-range characters
+
+        my $letters =~ m/[A-Za-z0-9_]*/;   # not ok
+        my $letters =~ m/[A-Za-z0-9_]*/a;  # ok
+        my $letters =~ m/[A-Za-z0-9_]*/aa; # ok
 
 Do note that the `/a` and `/aa` modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduct a requirement for Perl 5.14.
 
