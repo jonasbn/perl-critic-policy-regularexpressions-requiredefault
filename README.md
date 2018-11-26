@@ -30,11 +30,11 @@ This policy is not configurable at this time. Please see the TODO ["section"](#s
 
 # INCOMPATIBILITIES
 
-This ditribution holds no known incompatibilities at this time, please see ["DEPENDENCIES AND REQUIREMENTS"](#dependencies-and-requirements) for details on version requirements.
+This distribution holds no known incompatibilities at this time, please see ["DEPENDENCIES AND REQUIREMENTS"](#dependencies-and-requirements) for details on version requirements.
 
 # BUGS AND LIMITATIONS
 
-This ditribution holds no known incompatibilities at this time, please refer to the [the issue listing on GitHub](https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues) for more up to date information.
+This distribution holds no known incompatibilities at this time, please refer to the [the issue listing on GitHub](https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues) for more up to date information.
 
 # BUG REPORTING
 
@@ -49,12 +49,12 @@ This distribution aims to adhere to the Perl::Critic::Policy standards and Perl 
 This distribution requires:
 
 - Perl 5.8
-=item \* Carp
-=item \* Readonly
-=item \* Perl::Critic::Policy
-=item \* Perl::Critic::Utils
+- Carp
+- Readonly
+- Perl::Critic::Policy
+- Perl::Critic::Utils
 
-Please see the lising in the file: `cpanfile`, included with the distribution for a complete listing and description for configuration, test and development.
+Please see the listing in the file: `cpanfile`, included with the distribution for a complete listing and description for configuration, test and development.
 
 # TODO
 

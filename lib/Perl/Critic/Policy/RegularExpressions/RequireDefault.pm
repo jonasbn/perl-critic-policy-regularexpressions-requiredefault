@@ -107,7 +107,7 @@ This distribution requires:
 
 =over
 
-=item * Perl 5.8
+=item * Perl 5.14
 
 =item * Carp
 
