@@ -80,7 +80,7 @@ The motivation for this Perl::Critic policy came from a [tweet](https://mobile.t
 
 # ACKNOWLEDGEMENTS
 
-- [Joelle Maslak (@joel)](https://twitter.com/jmaslak) / [JMASLAK](https://metacpan.org/author/JMASLAK)
+- [Joelle Maslak (@joel)](https://twitter.com/jmaslak) / [JMASLAK](https://metacpan.org/author/JMASLAK) for the initial idea, see link to original tweet under ["MOTIVATION"](#motivation)
 - [Dan Book (@Grinnz)](https://github.com/Grinnz) / [DBOOK](https://metacpan.org/author/DBOOK|) for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
 
 # LICENSE AND COPYRIGHT
