@@ -108,9 +108,13 @@ This distribution requires:
 =over
 
 =item * Perl 5.8
+
 =item * Carp
+
 =item * Readonly
+
 =item * Perl::Critic::Policy
+
 =item * Perl::Critic::Utils
 
 =back
