@@ -163,7 +163,7 @@ The motivation for this Perl::Critic policy came from a L<tweet|https://mobile.t
 
 =item * L<Joelle Maslak (@joel)|https://twitter.com/jmaslak> / L<JMASLAK|https://metacpan.org/author/JMASLAK>
 
-=item * L<https://github.com/Grinnz|@Grinnz> for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
+=item * L<Dan Book (@Grinnz)|https://github.com/Grinnz> / L<DBOOK|https://metacpan.org/author/DBOOK|> for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
 
 =back
 
