@@ -161,7 +161,7 @@ The motivation for this Perl::Critic policy came from a L<tweet|https://mobile.t
 
 =over
 
-=item * L<Joelle Maslak (@joel)|https://twitter.com/jmaslak> / L<JMASLAK|https://metacpan.org/author/JMASLAK>
+=item * L<Joelle Maslak (@joel)|https://twitter.com/jmaslak> / L<JMASLAK|https://metacpan.org/author/JMASLAK> for the initial idea, see link to original tweet under L</MOTIVATION>
 
 =item * L<Dan Book (@Grinnz)|https://github.com/Grinnz> / L<DBOOK|https://metacpan.org/author/DBOOK|> for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
 
