@@ -63,11 +63,9 @@ This policy has no affiliation
 
 =head1 DESCRIPTION
 
-The C</a> and C</aa> modifiers provides protection for applications that do not need to be exposed to all of Unicode and possible security issues with Unicode.
+The C</a> and C</aa> modifiers standing for ASCII-restrict or ASCII-safe, provides protection for applications that do not need to be exposed to all of Unicode and possible security issues with Unicode.
 
-This modifier stands for ASCII-restrict or ASCII-safe.
-
-C</a> causes the sequences C<\d>, C<\s>, C<\w>, and the Posix character classes to match only in the ASCII range. Meaning
+C</a> causes the sequences C<\d>, C<\s>, C<\w>, and the Posix character classes to match only in the ASCII range. Meaning:
 
 =over
 
