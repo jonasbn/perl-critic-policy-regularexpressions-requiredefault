@@ -63,7 +63,19 @@ This policy has no affiliation
 
 =head1 DESCRIPTION
 
+This poliy aims to help enforce using Perl's protective measures against security vulnerabilities related to Unicode, such as:
+
+=over
+
+=item * Visual Spoofing
+
+=item * Character and String Transformation Vulnerabilities
+
+=back
+
+
 The C</a> and C</aa> modifiers standing for ASCII-restrict or ASCII-safe, provides protection for applications that do not need to be exposed to all of Unicode and possible security issues with Unicode.
+
 
 C</a> causes the sequences C<\d>, C<\s>, C<\w>, and the Posix character classes to match only in the ASCII range. Meaning:
 
