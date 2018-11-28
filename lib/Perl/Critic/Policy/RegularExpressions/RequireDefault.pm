@@ -149,6 +149,8 @@ Please see the listing in the file: F<cpanfile>, included with the distribution 
 
 =item * L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>
 
+=item * L<Unicode Security Issues FAQ|http://www.unicode.org/faq/security.html>
+
 =item * L<Unicode Security Guide|http://websec.github.io/unicode-security-guide/>
 
 =back
