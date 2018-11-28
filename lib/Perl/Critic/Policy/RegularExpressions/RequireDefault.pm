@@ -165,6 +165,8 @@ Please see the listing in the file: F<cpanfile>, included with the distribution 
 
 =item * L<Unicode Security Guide|http://websec.github.io/unicode-security-guide/>
 
+=item * L<Perl::Critic|https://metacpan.org/pod/Perl::Critic>
+
 =item * L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>
 
 =back
