@@ -147,11 +147,13 @@ Please see the listing in the file: F<cpanfile>, included with the distribution 
 
 =item * L<Perl regular expression documentation: perlre|https://perldoc.perl.org/perlre.html>
 
-=item * L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>
+=item * L<Perl delta file describing introduction of modifiers in Perl 5.14|https://perldoc.pl/perl5140delta#%2Fd%2C-%2Fl%2C-%2Fu%2C-and-%2Fa-modifiers>
 
 =item * L<Unicode Security Issues FAQ|http://www.unicode.org/faq/security.html>
 
 =item * L<Unicode Security Guide|http://websec.github.io/unicode-security-guide/>
+
+=item * L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>
 
 =back
 
