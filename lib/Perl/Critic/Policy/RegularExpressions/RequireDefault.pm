@@ -15,6 +15,8 @@ our $VERSION = '0.02';
 
 Readonly::Scalar my $DESC => q{Regular expression without "/a" or "/aa" flag};
 Readonly::Scalar my $EXPL => q{Use regular expression "/a" or "/aa" flag};
+Readonly::Scalar my $TRUE => 1;
+Readonly::Scalar my $FALSE => 0;
 
 #-----------------------------------------------------------------------------
 
@@ -26,6 +28,7 @@ sub applies_to {
         PPI::Token::Regexp::Match
         PPI::Token::Regexp::Substitute
         PPI::Token::QuoteLike::Regexp
+        PPI::Statement::Include
     >;
 }
 
@@ -34,13 +37,43 @@ sub applies_to {
 sub violates {
     my ( $self, $elem, $doc ) = @_;
 
+    if ( _pragma_enabled($elem) ) {
+        return;    # ok!;
+    }
+
     my $re = $doc->ppix_regexp_from_element($elem)
         or return;
+
     $re->modifier_asserted('a')
         or $re->modifier_asserted('aa')
         or return $self->violation( $DESC, $EXPL, $elem );
 
-    return;    # ok!;
+    return;        # ok!;
+}
+
+sub _correct_modifier {
+    my $elem = shift;
+
+    if ( $elem->arguments eq 'a' or $elem->arguments eq 'aa' ) {
+        return $TRUE;
+    }
+
+    return $FALSE;
+}
+
+sub _pragma_enabled {
+    my $elem = shift;
+
+    if (    $elem->can('type')
+        and $elem->type() eq 'use'
+        and $elem->pragma() eq 're'
+        and _correct_modifier($elem) )
+    {
+
+        return $TRUE;
+    }
+
+    return $FALSE;
 }
 
 1;
