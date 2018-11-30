@@ -106,9 +106,7 @@ This poliy aims to help enforce using Perl's protective measures against securit
 
 =back
 
-
 The C</a> and C</aa> modifiers standing for ASCII-restrict or ASCII-safe, provides protection for applications that do not need to be exposed to all of Unicode and possible security issues with Unicode.
-
 
 C</a> causes the sequences C<\d>, C<\s>, C<\w>, and the Posix character classes to match only in the ASCII range. Meaning:
 
@@ -134,6 +132,19 @@ C</a> causes the sequences C<\d>, C<\s>, C<\w>, and the Posix character classes 
 
 =back
 
+The policy also supports the pragma:
+
+    use re 'a';
+
+and:
+
+    use re 'aa';
+
+Which mean it will not evaluate the regular expressions any further:
+
+    use re 'a';
+    my $letters =~ m/[A-Za-z0-9_]*/;   # ok
+
 Do note that the C</a> and C</aa> modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduct a requirement for Perl 5.14.
 
 This policy is inspired by L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting> and many implementation details was lifted from this particular distribution.
@@ -148,7 +159,15 @@ This distribution holds no known incompatibilities at this time, please see L</D
 
 =head1 BUGS AND LIMITATIONS
 
-This distribution holds no known incompatibilities at this time, please refer to the L<the issue listing on GitHub|https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues> for more up to date information.
+=over
+
+=item * The pragma handling does not take into consideration of a pragma is disabled.
+
+=item * The pragma handling does not take lexical scope into consideration properly and only detects the definition once
+
+=back
+
+This distribution holds no other known limitations or bugs at this time, please refer to the L<the issue listing on GitHub|https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues> for more up to date information.
 
 =head1 BUG REPORTING
 
@@ -179,6 +198,8 @@ This distribution requires:
 Please see the listing in the file: F<cpanfile>, included with the distribution for a complete listing and description for configuration, test and development.
 
 =head1 TODO
+
+Ideas and suggestions for improvements and new features are listed in GitHub and are marked as C<enhancement>.
 
 =over
 
