@@ -3,3 +3,4 @@
 .vstags
 *.tar.gz
 Perl-Critic-Policy-RegularExpressions-RequireDefault-*/
+*.bak

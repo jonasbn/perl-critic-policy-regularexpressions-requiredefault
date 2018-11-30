@@ -12,6 +12,11 @@ This policy has no affiliation
 
 # DESCRIPTION
 
+This poliy aims to help enforce using Perl's protective measures against security vulnerabilities related to Unicode, such as:
+
+- Visual Spoofing
+- Character and String Transformation Vulnerabilities
+
 The `/a` and `/aa` modifiers standing for ASCII-restrict or ASCII-safe, provides protection for applications that do not need to be exposed to all of Unicode and possible security issues with Unicode.
 
 `/a` causes the sequences `\d`, `\s`, `\w`, and the Posix character classes to match only in the ASCII range. Meaning:
@@ -77,8 +82,11 @@ Please see the listing in the file: `cpanfile`, included with the distribution f
 # SEE ALSO
 
 - [Perl regular expression documentation: perlre](https://perldoc.perl.org/perlre.html)
-- [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting)
+- [Perl delta file describing introduction of modifiers in Perl 5.14](https://perldoc.pl/perl5140delta#%2Fd%2C-%2Fl%2C-%2Fu%2C-and-%2Fa-modifiers)
+- [Unicode Security Issues FAQ](http://www.unicode.org/faq/security.html)
 - [Unicode Security Guide](http://websec.github.io/unicode-security-guide/)
+- [Perl::Critic](https://metacpan.org/pod/Perl::Critic)
+- [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting)
 
 # MOTIVATION
 
