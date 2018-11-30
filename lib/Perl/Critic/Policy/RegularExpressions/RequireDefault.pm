@@ -9,7 +9,7 @@ use Perl::Critic::Utils qw{ :severities };
 
 use base 'Perl::Critic::Policy';
 
-our $VERSION = '0.02';
+our $VERSION = '1.00';
 
 #-----------------------------------------------------------------------------
 
@@ -88,7 +88,7 @@ Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> 
 
 =head1 VERSION
 
-This documentation describes version 0.02
+This documentation describes version 1.00
 
 =head1 AFFILIATION
 
