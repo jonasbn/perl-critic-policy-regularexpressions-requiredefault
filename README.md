@@ -4,7 +4,7 @@ Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the `/a` o
 
 # VERSION
 
-This documentation describes version 0.02
+This documentation describes version 1.00
 
 # AFFILIATION
 
@@ -39,6 +39,19 @@ The `/a` and `/aa` modifiers standing for ASCII-restrict or ASCII-safe, provides
         my $letters =~ m/[A-Za-z0-9_]*/a;  # ok
         my $letters =~ m/[A-Za-z0-9_]*/aa; # ok
 
+The policy also supports the pragma:
+
+    use re 'a';
+
+and:
+
+    use re 'aa';
+
+Which mean it will not evaluate the regular expressions any further:
+
+    use re 'a';
+    my $letters =~ m/[A-Za-z0-9_]*/;   # ok
+
 Do note that the `/a` and `/aa` modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduct a requirement for Perl 5.14.
 
 This policy is inspired by [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting) and many implementation details was lifted from this particular distribution.
@@ -53,7 +66,10 @@ This distribution holds no known incompatibilities at this time, please see ["DE
 
 # BUGS AND LIMITATIONS
 
-This distribution holds no known incompatibilities at this time, please refer to the [the issue listing on GitHub](https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues) for more up to date information.
+- The pragma handling does not take into consideration of a pragma is disabled.
+- The pragma handling does not take lexical scope into consideration properly and only detects the definition once
+
+This distribution holds no other known limitations or bugs at this time, please refer to the [the issue listing on GitHub](https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues) for more up to date information.
 
 # BUG REPORTING
 
@@ -76,6 +92,8 @@ This distribution requires:
 Please see the listing in the file: `cpanfile`, included with the distribution for a complete listing and description for configuration, test and development.
 
 # TODO
+
+Ideas and suggestions for improvements and new features are listed in GitHub and are marked as `enhancement`.
 
 - Please see [the issue listing on GitHub](https://github.com/jonasbn/perl-critic-policy-regularexpressions-requiredefault/issues)
 
