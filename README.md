@@ -4,7 +4,7 @@ Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the `/a` o
 
 # VERSION
 
-This documentation describes version 1.00
+This documentation describes version 1.01
 
 # AFFILIATION
 
@@ -125,7 +125,7 @@ The motivation for this Perl::Critic policy came from a [tweet](https://mobile.t
 
 # LICENSE AND COPYRIGHT
 
-Perl::Critic::Policy::RegularExpressions::RequireDefault is (C) by jonasbn 2018
+Perl::Critic::Policy::RegularExpressions::RequireDefault is (C) by jonasbn 2018-2019
 
 Perl::Critic::Policy::RegularExpressions::RequireDefault is released under the Artistic License 2.0
 
