@@ -11,6 +11,8 @@ allow_leading_tabs = 0
 
 [-ValuesAndExpressions::ProhibitConstantPragma]
 
-#- TODO -------------------------------------------------------------------------
-
+# TODO: This policy has to be reenabled at some point, we need to investigate what component
+# violates the policy, I am not sure the reference described the exact issue, but something
+# similar
+# REF: https://metacpan.org/pod/Test::Perl::Critic#FOR-Dist::Zilla-USERS
 [-CodeLayout::RequireTidyCode]
