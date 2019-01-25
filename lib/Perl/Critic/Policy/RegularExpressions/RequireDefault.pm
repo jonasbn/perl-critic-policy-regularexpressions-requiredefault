@@ -227,7 +227,7 @@ Ideas and suggestions for improvements and new features are listed in GitHub and
 
 =head1 MOTIVATION
 
-The motivation for this Perl::Critic policy came from a L<tweet|https://mobile.twitter.com/jmaslak/status/1008896883169751040> by L<@joel|https://mobile.twitter.com/jmaslak>
+The motivation for this Perl::Critic policy came from a L<tweet|https://twitter.com/jmaslak/status/1008896883169751040> by L<@joel|https://twitter.com/jmaslak>
 
     | Perl folk: Looking for a PR challenge task? Check for \d in regexes
     | that really should be [0-9] or should have the /a regex modifier.
