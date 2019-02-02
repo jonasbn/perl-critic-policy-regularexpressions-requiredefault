@@ -219,6 +219,8 @@ Ideas and suggestions for improvements and new features are listed in GitHub and
 
 =item * L<Unicode Security Guide|http://websec.github.io/unicode-security-guide/>
 
+=item * L<Presentation: "Unicode Transformations: Finding Elusive Vulnerabilities" by Chris Weber for OWASP AppSecDC November 2009|https://www.owasp.org/images/5/5a/Unicode_Transformations_Finding_Elusive_Vulnerabilities-Chris_Weber.pdf|>
+
 =item * L<Perl::Critic|https://metacpan.org/pod/Perl::Critic>
 
 =item * L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>

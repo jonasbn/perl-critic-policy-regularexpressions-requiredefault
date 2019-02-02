@@ -103,12 +103,13 @@ Ideas and suggestions for improvements and new features are listed in GitHub and
 - [Perl delta file describing introduction of modifiers in Perl 5.14](https://perldoc.pl/perl5140delta#%2Fd%2C-%2Fl%2C-%2Fu%2C-and-%2Fa-modifiers)
 - [Unicode Security Issues FAQ](http://www.unicode.org/faq/security.html)
 - [Unicode Security Guide](http://websec.github.io/unicode-security-guide/)
+- [Presentation: "Unicode Transformations: Finding Elusive Vulnerabilities" by Chris Weber for OWASP AppSecDC November 2009](https://www.owasp.org/images/5/5a/Unicode_Transformations_Finding_Elusive_Vulnerabilities-Chris_Weber.pdf|)
 - [Perl::Critic](https://metacpan.org/pod/Perl::Critic)
 - [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting)
 
 # MOTIVATION
 
-The motivation for this Perl::Critic policy came from a [tweet](https://mobile.twitter.com/jmaslak/status/1008896883169751040) by [@joel](https://mobile.twitter.com/jmaslak)
+The motivation for this Perl::Critic policy came from a [tweet](https://twitter.com/jmaslak/status/1008896883169751040) by [@joel](https://twitter.com/jmaslak)
 
     | Perl folk: Looking for a PR challenge task? Check for \d in regexes
     | that really should be [0-9] or should have the /a regex modifier.
