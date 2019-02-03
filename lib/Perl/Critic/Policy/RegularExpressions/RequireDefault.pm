@@ -177,7 +177,16 @@ This policy is inspired by L<Perl::Critic::Policy::RegularExpressions::RequireEx
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
-This policy is not configurable at this time. Please see the TODO L</section>.
+The policy has a single configuration parameter: C<strict>. The default is disabled (C<0>).
+
+The policy, if enabled, allow for both C<'a'> and C<'aa'>, if strict however is enabled, C<'a'> will trigger a violation and C<'aa'> will not.
+
+Example configuration:
+
+    [RegularExpressions::RequireDefault]
+    strict = 1
+
+Do note that the policy also evaluates if the pragmas are enabled, meaning: C<use re 'a';> will trigger a violation and C<use re 'a';> will not if the policy is configured for strict evaluation.
 
 =head1 INCOMPATIBILITIES
 
