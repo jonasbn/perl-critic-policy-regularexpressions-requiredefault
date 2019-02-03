@@ -209,16 +209,15 @@ This distribution requires:
 
 =over
 
-=item * Perl 5.14
+=item * L<Perl 5.14|https://metacpan.org/pod/release/JESSE/perl-5.14.0/pod/perl.pod>, released 2011-05-14
 
-=item * Carp
+=item * L<Carp|https://metacpan.org/pod/Carp>, in core since Perl 5.
 
-=item * Readonly
+=item * L<Readonly|https://metacpan.org/pod/Readonly>
 
-=item * Perl::Critic::Policy
+=item * L<Perl::Critic::Policy|https://metacpan.org/pod/Perl::Critic::Policy>
 
-=item * Perl::Critic::Utils
-
+=item * L<Perl::Critic::Utils|https://metacpan.org/pod/Perl::Critic::Utils>
 =back
 
 Please see the listing in the file: F<cpanfile>, included with the distribution for a complete listing and description for configuration, test and development.
