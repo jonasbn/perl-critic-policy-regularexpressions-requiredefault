@@ -227,6 +227,7 @@ This distribution requires:
 =item * L<Perl::Critic::Policy|https://metacpan.org/pod/Perl::Critic::Policy>
 
 =item * L<Perl::Critic::Utils|https://metacpan.org/pod/Perl::Critic::Utils>
+
 =back
 
 Please see the listing in the file: F<cpanfile>, included with the distribution for a complete listing and description for configuration, test and development.
