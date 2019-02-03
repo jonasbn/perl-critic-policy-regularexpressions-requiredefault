@@ -12,7 +12,7 @@ This policy has no affiliation
 
 # DESCRIPTION
 
-This poliy aims to help enforce using Perl's protective measures against security vulnerabilities related to Unicode, such as:
+This policy aims to help enforce Perl's protective measures against security vulnerabilities related to Unicode, such as:
 
 - Visual Spoofing
 - Character and String Transformation Vulnerabilities

@@ -37,24 +37,43 @@ sub applies_to {
 sub violates {
     my ( $self, $elem, $doc ) = @_;
 
-    if ( _pragma_enabled($elem) ) {
+    if ( $self->_pragma_enabled($elem) ) {
         return;    # ok!;
     }
 
     my $re = $doc->ppix_regexp_from_element($elem)
         or return;
 
-    $re->modifier_asserted('a')
-        or $re->modifier_asserted('aa')
-        or return $self->violation( $DESC, $EXPL, $elem );
+    if ( not $self->_allowed_modifier($re)) {
+        return $self->violation( $DESC, $EXPL, $elem );
+    }
 
     return;        # ok!;
 }
 
-sub _correct_modifier {
-    my $elem = shift;
+sub _allowed_modifier {
+    my ( $self, $re ) = @_;
 
-    if ( $elem->arguments eq 'a' or $elem->arguments eq 'aa' ) {
+    if ( $re->modifier_asserted('a') and not $self->{_strict} ) {
+        return $TRUE;
+    }
+
+    if ( $re->modifier_asserted('aa') ) {
+        return $TRUE;
+    }
+
+    return $FALSE;
+}
+
+
+sub _correct_modifier {
+    my ( $self, $elem ) = @_;
+
+    if ( $elem->arguments eq 'a' and not $self->{_strict} ) {
+        return $TRUE;
+    }
+
+    if ( $elem->arguments eq 'aa' ) {
         return $TRUE;
     }
 
@@ -62,18 +81,25 @@ sub _correct_modifier {
 }
 
 sub _pragma_enabled {
-    my $elem = shift;
+    my ( $self, $elem ) = @_;
 
     if (    $elem->can('type')
         and $elem->type() eq 'use'
         and $elem->pragma() eq 're'
-        and _correct_modifier($elem) )
+        and $self->_correct_modifier($elem) )
     {
-
         return $TRUE;
     }
 
     return $FALSE;
+}
+
+sub initialize_if_enabled {
+    my ( $self, $config ) = @_;
+
+    $self->{_strict} = $config->get('strict') || 0;
+
+    return $TRUE;
 }
 
 1;
