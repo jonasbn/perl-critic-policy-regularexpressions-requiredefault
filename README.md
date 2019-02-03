@@ -4,7 +4,7 @@ Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the `/a` o
 
 # VERSION
 
-This documentation describes version 1.01
+This documentation describes version 2.00
 
 # AFFILIATION
 
@@ -12,7 +12,7 @@ This policy has no affiliation
 
 # DESCRIPTION
 
-This poliy aims to help enforce using Perl's protective measures against security vulnerabilities related to Unicode, such as:
+This policy aims to help enforce Perl's protective measures against security vulnerabilities related to Unicode, such as:
 
 - Visual Spoofing
 - Character and String Transformation Vulnerabilities
@@ -58,7 +58,16 @@ This policy is inspired by [Perl::Critic::Policy::RegularExpressions::RequireExt
 
 # CONFIGURATION AND ENVIRONMENT
 
-This policy is not configurable at this time. Please see the TODO ["section"](#section).
+The policy has a single configuration parameter: `strict`. The default is disabled (`0`).
+
+The policy, if enabled, allow for both `'a'` and `'aa'`, if strict however is enabled, `'a'` will trigger a violation and `'aa'` will not.
+
+Example configuration:
+
+    [RegularExpressions::RequireDefault]
+    strict = 1
+
+Do note that the policy also evaluates if the pragmas are enabled, meaning: `use re 'a';` will trigger a violation and `use re 'a';` will not if the policy is configured for strict evaluation.
 
 # INCOMPATIBILITIES
 
@@ -83,11 +92,11 @@ This distribution aims to adhere to the Perl::Critic::Policy standards and Perl 
 
 This distribution requires:
 
-- Perl 5.14
-- Carp
-- Readonly
-- Perl::Critic::Policy
-- Perl::Critic::Utils
+- [Perl 5.14](https://metacpan.org/pod/release/JESSE/perl-5.14.0/pod/perl.pod), released 2011-05-14
+- [Carp](https://metacpan.org/pod/Carp), in core since Perl 5.
+- [Readonly](https://metacpan.org/pod/Readonly)
+- [Perl::Critic::Policy](https://metacpan.org/pod/Perl::Critic::Policy)
+- [Perl::Critic::Utils](https://metacpan.org/pod/Perl::Critic::Utils)
 
 Please see the listing in the file: `cpanfile`, included with the distribution for a complete listing and description for configuration, test and development.
 
