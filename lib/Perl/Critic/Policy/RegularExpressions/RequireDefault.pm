@@ -158,15 +158,15 @@ C</a> causes the sequences C<\d>, C<\s>, C<\w>, and the Posix character classes 
 
 The policy also supports the pragma:
 
-    use re 'a';
+    use re '/a';
 
 and:
 
-    use re 'aa';
+    use re '/aa';
 
 Which mean it will not evaluate the regular expressions any further:
 
-    use re 'a';
+    use re '/a';
     my $letters =~ m/[A-Za-z0-9_]*/;   # ok
 
 Do note that the C</a> and C</aa> modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduct a requirement for Perl 5.14.
@@ -257,6 +257,8 @@ Ideas and suggestions for improvements and new features are listed in GitHub and
 =item * L<Perl::Critic|https://metacpan.org/pod/Perl::Critic>
 
 =item * L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>
+
+)item * L<Perl Pragma Documentation|https://perldoc.perl.org/re.html>
 
 =back
 
