@@ -1,6 +1,6 @@
 package Perl::Critic::Policy::RegularExpressions::RequireDefault;
 
-use 5.006001;
+use 5.006;
 use strict;
 use warnings;
 use Readonly;
@@ -216,7 +216,9 @@ This distribution requires:
 
 =over
 
-=item * L<Perl 5.14|https://metacpan.org/pod/release/JESSE/perl-5.14.0/pod/perl.pod>, released 2011-05-14
+=item * L<Perl 5.6.0> syntactially for the actual implementation
+
+=item * L<Perl 5.14|https://metacpan.org/pod/release/JESSE/perl-5.14.0/pod/perl.pod> for developing the distribution, which relies on L<Dist::Zilla|http://dzil.org/>. The features on which this policy relies, where introduced in Perl 5.14, but this does not make for an actual requirement for the policy only the recommendations it imposes.
 
 =item * L<Carp|https://metacpan.org/pod/Carp>, in core since Perl 5.
 
@@ -224,7 +226,7 @@ This distribution requires:
 
 =item * L<Perl::Critic::Policy|https://metacpan.org/pod/Perl::Critic::Policy>
 
-=item * L<Perl::Critic::Utils|https://metacpan.org/pod/Perl::Critic::Utils>
+=item * L<Perl::Critic::Utils|https://metacpan.org/pod/Perl::Critic::Utils>, part of Perl::Critic
 
 =back
 
