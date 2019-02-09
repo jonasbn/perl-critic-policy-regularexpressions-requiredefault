@@ -216,7 +216,7 @@ This distribution requires:
 
 =over
 
-=item * L<Perl 5.6.0> syntactially for the actual implementation
+=item * Perl 5.6.0 syntactially for the actual implementation
 
 =item * L<Perl 5.14|https://metacpan.org/pod/release/JESSE/perl-5.14.0/pod/perl.pod> for developing the distribution, which relies on L<Dist::Zilla|http://dzil.org/>. The features on which this policy relies, where introduced in Perl 5.14, but this does not make for an actual requirement for the policy only the recommendations it imposes.
 
