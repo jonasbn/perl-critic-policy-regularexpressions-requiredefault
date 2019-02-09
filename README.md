@@ -41,15 +41,15 @@ The `/a` and `/aa` modifiers standing for ASCII-restrict or ASCII-safe, provides
 
 The policy also supports the pragma:
 
-    use re 'a';
+    use re '/a';
 
 and:
 
-    use re 'aa';
+    use re '/aa';
 
 Which mean it will not evaluate the regular expressions any further:
 
-    use re 'a';
+    use re '/a';
     my $letters =~ m/[A-Za-z0-9_]*/;   # ok
 
 Do note that the `/a` and `/aa` modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduct a requirement for Perl 5.14.
@@ -92,11 +92,12 @@ This distribution aims to adhere to the Perl::Critic::Policy standards and Perl 
 
 This distribution requires:
 
-- [Perl 5.14](https://metacpan.org/pod/release/JESSE/perl-5.14.0/pod/perl.pod), released 2011-05-14
+- Perl 5.6.0 syntactially for the actual implementation
+- [Perl 5.14](https://metacpan.org/pod/release/JESSE/perl-5.14.0/pod/perl.pod) for developing the distribution, which relies on [Dist::Zilla](http://dzil.org/). The features on which this policy relies, where introduced in Perl 5.14, but this does not make for an actual requirement for the policy only the recommendations it imposes.
 - [Carp](https://metacpan.org/pod/Carp), in core since Perl 5.
 - [Readonly](https://metacpan.org/pod/Readonly)
 - [Perl::Critic::Policy](https://metacpan.org/pod/Perl::Critic::Policy)
-- [Perl::Critic::Utils](https://metacpan.org/pod/Perl::Critic::Utils)
+- [Perl::Critic::Utils](https://metacpan.org/pod/Perl::Critic::Utils), part of Perl::Critic
 
 Please see the listing in the file: `cpanfile`, included with the distribution for a complete listing and description for configuration, test and development.
 
@@ -115,6 +116,8 @@ Ideas and suggestions for improvements and new features are listed in GitHub and
 - [Presentation: "Unicode Transformations: Finding Elusive Vulnerabilities" by Chris Weber for OWASP AppSecDC November 2009](https://www.owasp.org/images/5/5a/Unicode_Transformations_Finding_Elusive_Vulnerabilities-Chris_Weber.pdf|)
 - [Perl::Critic](https://metacpan.org/pod/Perl::Critic)
 - [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting)
+
+    )item \* [Perl Pragma Documentation](https://perldoc.perl.org/re.html)
 
 # MOTIVATION
 
