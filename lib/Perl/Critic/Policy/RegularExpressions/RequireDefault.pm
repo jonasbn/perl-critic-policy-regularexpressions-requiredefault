@@ -106,6 +106,17 @@ __END__
 
 =pod
 
+=begin markdown
+
+# Perl::Critic::Policy::RegularExpressions::RequireDefault
+
+![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
+[![Build Status](https://travis-ci.org/jonasbn/perl-critic-policy-module-moduleblacklist.svg?branch=master)](https://travis-ci.org/jonasbn/perl-critic-policy-module-moduleblacklist)
+[![Coverage Status](https://coveralls.io/repos/github/jonasbn/perl-critic-policy-module-moduleblacklist/badge.svg?branch=master)](https://coveralls.io/github/jonasbn/perl-critic-policy-module-moduleblacklist?branch=master)
+[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
+
+=end markdown
+
 =head1 NAME
 
 Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> or C</aa> modifier with regular expressions.
