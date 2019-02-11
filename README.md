@@ -1,10 +1,17 @@
+# Perl::Critic::Policy::RegularExpressions::RequireDefault
+
+![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
+[![Build Status](https://travis-ci.org/jonasbn/perl-critic-policy-module-moduleblacklist.svg?branch=master)](https://travis-ci.org/jonasbn/perl-critic-policy-module-moduleblacklist)
+[![Coverage Status](https://coveralls.io/repos/github/jonasbn/perl-critic-policy-module-moduleblacklist/badge.svg?branch=master)](https://coveralls.io/github/jonasbn/perl-critic-policy-module-moduleblacklist?branch=master)
+[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
+
 # NAME
 
 Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the `/a` or `/aa` modifier with regular expressions.
 
 # VERSION
 
-This documentation describes version 2.00
+This documentation describes version 2.01
 
 # AFFILIATION
 
@@ -92,7 +99,7 @@ This distribution aims to adhere to the Perl::Critic::Policy standards and Perl 
 
 This distribution requires:
 
-- Perl 5.6.0 syntactially for the actual implementation
+- Perl 5.6.0 syntactically for the actual implementation
 - [Perl 5.14](https://metacpan.org/pod/release/JESSE/perl-5.14.0/pod/perl.pod) for developing the distribution, which relies on [Dist::Zilla](http://dzil.org/). The features on which this policy relies, where introduced in Perl 5.14, but this does not make for an actual requirement for the policy only the recommendations it imposes.
 - [Carp](https://metacpan.org/pod/Carp), in core since Perl 5.
 - [Readonly](https://metacpan.org/pod/Readonly)
@@ -113,11 +120,10 @@ Ideas and suggestions for improvements and new features are listed in GitHub and
 - [Perl delta file describing introduction of modifiers in Perl 5.14](https://perldoc.pl/perl5140delta#%2Fd%2C-%2Fl%2C-%2Fu%2C-and-%2Fa-modifiers)
 - [Unicode Security Issues FAQ](http://www.unicode.org/faq/security.html)
 - [Unicode Security Guide](http://websec.github.io/unicode-security-guide/)
-- [Presentation: "Unicode Transformations: Finding Elusive Vulnerabilities" by Chris Weber for OWASP AppSecDC November 2009](https://www.owasp.org/images/5/5a/Unicode_Transformations_Finding_Elusive_Vulnerabilities-Chris_Weber.pdf|)
+- [Presentation: "Unicode Transformations: Finding Elusive Vulnerabilities" by Chris Weber for OWASP AppSecDC November 2009](https://www.owasp.org/images/5/5a/Unicode_Transformations_Finding_Elusive_Vulnerabilities-Chris_Weber.pdf)
 - [Perl::Critic](https://metacpan.org/pod/Perl::Critic)
 - [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting)
-
-    )item \* [Perl Pragma Documentation](https://perldoc.perl.org/re.html)
+- [Perl Pragma Documentation](https://perldoc.perl.org/re.html)
 
 # MOTIVATION
 
@@ -134,7 +140,7 @@ The motivation for this Perl::Critic policy came from a [tweet](https://twitter.
 # ACKNOWLEDGEMENTS
 
 - [Joelle Maslak (@joel)](https://twitter.com/jmaslak) / [JMASLAK](https://metacpan.org/author/JMASLAK) for the initial idea, see link to original tweet under ["MOTIVATION"](#motivation)
-- [Dan Book (@Grinnz)](https://github.com/Grinnz) / [DBOOK](https://metacpan.org/author/DBOOK|) for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
+- [Dan Book (@Grinnz)](https://github.com/Grinnz) / [DBOOK](https://metacpan.org/author/DBOOK) for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
 
 # LICENSE AND COPYRIGHT
 
