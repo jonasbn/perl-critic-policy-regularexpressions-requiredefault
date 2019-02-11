@@ -265,7 +265,7 @@ Ideas and suggestions for improvements and new features are listed in GitHub and
 
 =item * L<Unicode Security Guide|http://websec.github.io/unicode-security-guide/>
 
-=item * L<Presentation: "Unicode Transformations: Finding Elusive Vulnerabilities" by Chris Weber for OWASP AppSecDC November 2009|https://www.owasp.org/images/5/5a/Unicode_Transformations_Finding_Elusive_Vulnerabilities-Chris_Weber.pdf|>
+=item * L<Presentation: "Unicode Transformations: Finding Elusive Vulnerabilities" by Chris Weber for OWASP AppSecDC November 2009|https://www.owasp.org/images/5/5a/Unicode_Transformations_Finding_Elusive_Vulnerabilities-Chris_Weber.pdf>
 
 =item * L<Perl::Critic|https://metacpan.org/pod/Perl::Critic>
 
@@ -297,7 +297,7 @@ The motivation for this Perl::Critic policy came from a L<tweet|https://twitter.
 
 =item * L<Joelle Maslak (@joel)|https://twitter.com/jmaslak> / L<JMASLAK|https://metacpan.org/author/JMASLAK> for the initial idea, see link to original tweet under L</MOTIVATION>
 
-=item * L<Dan Book (@Grinnz)|https://github.com/Grinnz> / L<DBOOK|https://metacpan.org/author/DBOOK|> for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
+=item * L<Dan Book (@Grinnz)|https://github.com/Grinnz> / L<DBOOK|https://metacpan.org/author/DBOOK> for information on Pragma and requirement for Perl 5.14, when using the modifiers handled and mentioned by this policy
 
 =back
 
