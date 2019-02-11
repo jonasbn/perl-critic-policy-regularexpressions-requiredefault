@@ -271,7 +271,7 @@ Ideas and suggestions for improvements and new features are listed in GitHub and
 
 =item * L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting>
 
-)item * L<Perl Pragma Documentation|https://perldoc.perl.org/re.html>
+=item * L<Perl Pragma Documentation|https://perldoc.perl.org/re.html>
 
 =back
 
