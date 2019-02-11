@@ -112,7 +112,7 @@ Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> 
 
 =head1 VERSION
 
-This documentation describes version 2.00
+This documentation describes version 2.01
 
 =head1 AFFILIATION
 
