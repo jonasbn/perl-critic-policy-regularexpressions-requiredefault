@@ -135,7 +135,7 @@ The motivation for this Perl::Critic policy came from a [tweet](https://twitter.
 
 # AUTHOR
 
-- jonasbn <jonasbn@cpan.org>
+- Jonas B. (jonasbn) <jonasbn@cpan.org>
 
 # ACKNOWLEDGEMENTS
 

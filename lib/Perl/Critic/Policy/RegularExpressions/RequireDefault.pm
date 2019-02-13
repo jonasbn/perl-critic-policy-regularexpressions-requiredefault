@@ -287,7 +287,7 @@ The motivation for this Perl::Critic policy came from a L<tweet|https://twitter.
 
 =over
 
-=item * jonasbn <jonasbn@cpan.org>
+=item * Jonas B. (jonasbn) <jonasbn@cpan.org>
 
 =back
 
