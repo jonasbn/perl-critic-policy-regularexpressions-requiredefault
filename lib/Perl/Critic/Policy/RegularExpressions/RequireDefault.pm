@@ -110,6 +110,7 @@ __END__
 
 # Perl::Critic::Policy::RegularExpressions::RequireDefault
 
+[![CPAN version](https://badge.fury.io/pl/perl-critic-policy-regularexpressions-requiredefault.svg)](https://badge.fury.io/pl/perl-critic-policy-regularexpressions-requiredefault)
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
 [![Build Status](https://travis-ci.org/jonasbn/perl-critic-policy-module-moduleblacklist.svg?branch=master)](https://travis-ci.org/jonasbn/perl-critic-policy-module-moduleblacklist)
 [![Coverage Status](https://coveralls.io/repos/github/jonasbn/perl-critic-policy-module-moduleblacklist/badge.svg?branch=master)](https://coveralls.io/github/jonasbn/perl-critic-policy-module-moduleblacklist?branch=master)
