@@ -118,6 +118,12 @@ __END__
 
 =end markdown
 
+=begin stopwords
+
+Posix pragma pragmas Readonly TODO perlre OWASP AppSecDC Pragma jonasbn ACKNOWLEDGEMENTS Joelle Maslak JMASLAK DBOOK
+
+=end stopwords
+
 =head1 NAME
 
 Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> or C</aa> modifier with regular expressions.
@@ -181,7 +187,7 @@ Which mean it will not evaluate the regular expressions any further:
     use re '/a';
     my $letters =~ m/[A-Za-z0-9_]*/;   # ok
 
-Do note that the C</a> and C</aa> modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduct a requirement for Perl 5.14.
+Do note that the C</a> and C</aa> modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduce a requirement for Perl 5.14.
 
 This policy is inspired by L<Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting|https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting> and many implementation details was lifted from this particular distribution.
 
