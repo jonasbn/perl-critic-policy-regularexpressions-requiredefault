@@ -60,7 +60,7 @@ Which mean it will not evaluate the regular expressions any further:
     use re '/a';
     my $letters =~ m/[A-Za-z0-9_]*/;   # ok
 
-Do note that the `/a` and `/aa` modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduct a requirement for Perl 5.14.
+Do note that the `/a` and `/aa` modifiers require Perl 5.14, so by using the recommended modifiers you indirectly introduce a requirement for Perl 5.14.
 
 This policy is inspired by [Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting](https://metacpan.org/pod/Perl::Critic::Policy::RegularExpressions::RequireExtendedFormatting) and many implementation details was lifted from this particular distribution.
 
