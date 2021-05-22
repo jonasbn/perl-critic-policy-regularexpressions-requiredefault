@@ -130,7 +130,7 @@ Perl::Critic::Policy::RegularExpressions::RequireDefault - Always use the C</a> 
 
 =head1 VERSION
 
-This documentation describes version 2.01
+This documentation describes version 2.02
 
 =head1 AFFILIATION
 
@@ -310,7 +310,7 @@ The motivation for this Perl::Critic policy came from a L<tweet|https://twitter.
 
 =head1 LICENSE AND COPYRIGHT
 
-Perl::Critic::Policy::RegularExpressions::RequireDefault is (C) by jonasbn 2018-2019
+Perl::Critic::Policy::RegularExpressions::RequireDefault is (C) by jonasbn 2018-2021
 
 Perl::Critic::Policy::RegularExpressions::RequireDefault is released under the Artistic License 2.0
 
