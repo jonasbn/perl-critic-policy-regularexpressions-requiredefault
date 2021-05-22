@@ -1,4 +1,5 @@
 Changelog for Perl-Critic-Policy-RegularExpressions-RequireDefault
+
 2.02 2021-05-22T13:15:06Z Maintenance release, update not required
 
 - Addressed issue with spelling in the documentation
